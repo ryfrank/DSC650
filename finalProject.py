@@ -9,7 +9,7 @@ spark = SparkSession.builder.appName("MLlib Salary Prediction").enableHiveSuppor
 
 # Step 2: Load the data from the Hive table 'dsSalaries' into a Spark DataFrame
 salaryDF = spark.sql("SELECT workYear, experienceLevel, employmentType, jobTitle, salary, salaryCurrency, "
-                     "salaryInUSD, employeeResidence, remoteRatio, companyLocation, companySize"
+                     "salaryInUSD, employeeResidence, remoteRatio, companyLocation, companySize "
                      "FROM dsSalaries")
 
 print(salaryDF.head())
