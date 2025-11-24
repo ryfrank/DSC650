@@ -12,4 +12,4 @@ salaryDF = spark.sql("SELECT workYear, experienceLevel, employmentType, jobTitle
                      "salaryInUSD, employeeResidence, remoteRatio, companyLocation, companySize "
                      "FROM dsSalaries")
 
-println(salaryDF.head())
+print(salaryDF.head())
